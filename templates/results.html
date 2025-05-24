@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты анализа</title>
+</head>
+<body>
+    <h1>Результаты анализа для канала {{ folder_name }}</h1>
+    <ul>
+        <li><a href="{{ url_for('download_file', folder_name=folder_name, filename='lexical_report.txt') }}">Лексический отчет</a></li>
+        <li><a href="{{ url_for('download_file', folder_name=folder_name, filename='topwords_plot.png') }}">График топ-слов</a></li>
+        <li><a href="{{ url_for('download_file', folder_name=folder_name, filename='entities_plot.png') }}">График сущностей</a></li>
+        <li><a href="{{ url_for('download_file', folder_name=folder_name, filename='sentiment_plot.png') }}">График сентимент-анализа</a></li>
+    </ul>
+</body>
+</html>
