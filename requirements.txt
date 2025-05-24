@@ -8,3 +8,4 @@ gunicorn
 unidecode
 numpy
 pandas
+pymorphy3
