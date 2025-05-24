@@ -10,8 +10,6 @@ numpy
 pandas
 pymorphy3
 torch
-re
-os
 collections
 transformers
 scipy.special
