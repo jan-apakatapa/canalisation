@@ -5,3 +5,6 @@ spacy
 textstat
 lexicalrichness
 gunicorn
+unidecode
+numpy
+pandas
