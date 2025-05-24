@@ -3,10 +3,9 @@ import spacy
 import matplotlib.pyplot as plt
 from collections import Counter
 
-# Загружаем модель spaCy для русского языка
-nlp = spacy.load("ru_core_news_sm")
 
 def generate_entities_plot(file_path, results_folder):
+    nlp = spacy.load("ru_core_news_sm")
     """Функция для извлечения сущностей и построения графика их частоты."""
     # Извлекаем имя телеграм-канала из пути файла (например, название файла без расширения)
     channel_name = os.path.splitext(os.path.basename(file_path))[0]
