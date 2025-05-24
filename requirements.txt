@@ -11,4 +11,4 @@ pandas
 pymorphy3
 torch
 transformers
-scipy.special
+
